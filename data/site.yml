@@ -1,0 +1,22 @@
+defaults:
+ title: Set the default title in data/site.yml or in the frontmatter.
+ description: Set the default description in data/site.yml or in the frontmatter.
+ keywords: Set the default keywords in data/site.yml or in the frontmatter.
+ author: Set the default author in data/site.yml or in the frontmatter.
+ favicon: /images/favicon.ico
+ appletouchicon: /images/apple-touch-icon.png
+ fonts: http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light
+ facebookurl: false
+ twitterurl: false
+ linkedinurl: false
+ businessaddress: 934 Clark Street, Lansing, MI 48906
+ businessphone: 517 862 3251
+ businessemail: tstewart@comwent.com
+ showlatesttweets: false
+ shownewslettersignup: true
+ logourl: 
+ companyname: Common Wealth Enterprises
+ googleanalytics: false
+ deployroot: http://www.acme.com
+ cognitelabsemailtoken: false # email tokens from http://samdobson.github.io/fwdform/ use curl to get a token like this: curl --data "email=t@blah.com" http://emailrouter.cognitelabs.com/register mandrill account is dave@cognitelabs.com and heroku is smithd98@gmail.com
+

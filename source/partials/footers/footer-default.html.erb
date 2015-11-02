@@ -1,0 +1,102 @@
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<h4 class="">About Common Wealth Enterprises</h4>
+				<p style="font-size:12px;">Common Wealth Enterprises is shaping a new consumer culture that combines social and economic value creation. We build, collaborate with, and support the growth of enterprises by integrating community values and social change with creative action and entrepreneurial approaches.</p>
+			</div>
+			<div class="footer-ribbon">
+				<span>Get in Touch</span>
+			</div>
+			<div class="col-md-3">
+				<% if data.site.defaults.shownewslettersignup  %>
+				<div class="newsletter">
+					<h4>Newsletter</h4>
+					<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+
+					<div class="alert alert-success hidden" id="newsletterSuccess">
+						<strong>Success!</strong> You've been added to our email list.
+					</div>
+
+					<div class="alert alert-danger hidden" id="newsletterError"></div>
+
+					<form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+						<div class="input-group">
+							<input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit">Go!</button>
+							</span>
+						</div>
+					</form>
+				</div>
+				<% end %>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="contact-details">
+					<% if data.site.defaults.businessaddress || data.site.defaults.phone || data.site.defaults.businessemail %>
+					<h4>Contact Us</h4>
+					<ul class="contact">
+						<% if data.site.defaults.businessaddress %>
+						<li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> <%= data.site.defaults.businessaddress %></p></li>
+						<% end %>
+						<% if data.site.defaults.businessphone %>
+						<li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> <%= data.site.defaults.businessphone %></p></li>
+						<% end %>
+						<% if data.site.defaults.businessemail %>
+						<li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:<%= data.site.defaults.businessemail %>"><%= data.site.defaults.businessemail %></a></p></li>
+						<% end %>
+					</ul>
+					<% end %>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<% if data.site.defaults.showlatesttweets  %>
+				<h4>Latest Tweets</h4>
+				<div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "", "count": 2}'>
+					<p>Please wait...</p>
+				</div>
+				<% end %>
+			</div>
+			<div class="col-md-2">
+				<% if data.site.defaults.facebookurl || data.site.defaults.twitterurl || data.site.defaults.linkedinurl %>
+				<h4>Follow Us</h4>
+				<ul class="social-icons">
+					<% if data.site.defaults.facebookurl %>
+						<li class="social-icons-facebook"><a href="<%= data.site.defaults.facebookurl %>" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<% end %>
+					<% if data.site.defaults.twitterurl %>
+						<li class="social-icons-twitter"><a href="<%= data.site.defaults.twitterurl %>" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<% end %>
+					<% if data.site.defaults.linkedinurl %>
+						<li class="social-icons-linkedin"><a href="<%= data.site.defaults.linkedinurl %>" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					<%end%>
+				</ul>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="/" class="logo">
+						<img alt="<%= data.site.defaults.companyname %>" class="img-responsive" src="images/logos/comwent_whitelogo.png">
+					</a>
+				</div>
+				<div class="col-md-6">
+					<p>© Copyright <%= Time.now.year %>. All Rights Reserved.</p>
+				</div>
+				<div class="col-md-4">
+					<nav id="sub-menu">
+						<ul>
+							<li><a href="page-faq.html">FAQ's</a></li>
+							<li><a href="sitemap.html">Sitemap</a></li>
+							<li><a href="contact-us.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

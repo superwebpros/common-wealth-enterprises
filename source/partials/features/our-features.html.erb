@@ -1,0 +1,43 @@
+<section id="features" style="background-color:#F8F8F8;">
+	<div class="container" >
+		<div class="row mb-md mt-xlg">
+			<div class="col-md-12">
+				<h2 class="heading-primary">Core <strong>Values</strong></h2>
+				<div class="row">
+					<% secondgroup = data.features.clone %> 
+					<% i = 0 %>
+					<% iend = secondgroup.length %>
+					<% iend = (iend /3.to_f).ceil %>
+					<% firstgroup = Hash.new() %>
+					
+					<% while i < iend  %>
+						<% firstitem = secondgroup.first %>
+						<% firstgroup[firstitem[0]] = firstitem[1] %>
+						<% secondgroup.delete(firstitem[0]) %>
+						<% i = i + 1%>
+					<% end %>
+					
+ 
+					<% featuregroup = [firstgroup, secondgroup] %>
+					<% featuregroup.each do | groupvalue | %>
+
+					<div class="col-sm-4">
+						<% groupvalue.each do| key, value| %>
+						<div class="feature-box<% if current_page.data.featureboxstyle %> <%= current_page.data.featureboxstyle%><% end %>">
+							<div class="feature-box-icon">
+								<i class="fa <%= value.icon %>"></i>
+							</div>
+							<div class="feature-box-info">
+								<h4 class="heading-primary mb-none"><%= key %></h4>
+								<p class="tall" style="font-size:12px; line-height: 16px;"><%= value.description %></p>
+							</div>
+						</div>
+						<% end %>
+					</div>
+					<% end %>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>

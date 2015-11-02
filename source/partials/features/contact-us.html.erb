@@ -1,0 +1,72 @@
+<section id="contact">
+			<div class="container">
+				<div class="row mt-xlg">
+					<div class="col-md-6">
+
+						<div class="alert alert-success hidden" id="contactSuccess">
+							<strong>Success!</strong> Your message has been sent to us.
+						</div>
+
+						<div class="alert alert-danger hidden" id="contactError">
+							<strong>Error!</strong> There was an error sending your message.
+						</div>
+
+						<h2 class="mb-sm mt-sm heading-primary"><strong>Contact</strong> Us</h2>
+						<form id="contactForm" action="http://emailrouter.cognitelabs.com/user/<%= data.site.defaults.cognitelabsemailtoken %>" method="POST">
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-6">
+										<label>Your name *</label>
+										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+									</div>
+									<div class="col-md-6">
+										<label>Your email address *</label>
+										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<label>Message *</label>
+										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input type="submit" value="Send Message" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-6">
+
+						<h4 class="heading-primary mt-lg">Get in <strong>Touch</strong></h4>
+						<p>If you're ready to take your business to the next level by accelerating growth, decreasing costs, and growing margins, get in touch. We'd love the opportunity to work with you! </p>
+
+						<hr>
+						<% if data.site.defaults.businessaddress || data.site.defaults.businessphone || data.site.defaults.businessemail %>
+							<h4 class="heading-primary">The <strong>Office</strong></h4>
+							<ul class="list list-icons list-icons-style-3 mt-xlg">
+								<% if data.site.defaults.businessaddress %>
+									<li><i class="fa fa-map-marker"></i> <strong>Address:</strong> <%= data.site.defaults.businessaddress %></li>
+								<% end %>
+								<% if data.site.defaults.businessphone %>
+									<li><i class="fa fa-phone"></i> <strong>Phone:</strong> <%= data.site.defaults.businessphone %></li>
+								<% end %>
+								<% if data.site.defaults.businessemail %>
+								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:<%= data.site.defaults.businessemail %>"><%= data.site.defaults.businessemail %></a></li>
+								<% end %>
+							</ul>
+
+							<hr>
+						<% end %>
+
+						
+
+					</div>
+
+				</div>
+			</div>
+		</section>

@@ -1,0 +1,56 @@
+<!-- Vendor -->
+<!--[if lt IE 9]>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="vendor/jquery/jquery.js"></script>
+<!--<![endif]-->
+<script src="vendor/jquery.appear/jquery.appear.js"></script>
+<script src="vendor/jquery.easing/jquery.easing.js"></script>
+<script src="vendor/jquery-cookie/jquery-cookie.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.js"></script>
+<script src="vendor/common/common.js"></script>
+<script src="vendor/jquery.validation/jquery.validation.js"></script>
+<script src="vendor/jquery.stellar/jquery.stellar.js"></script>
+<script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+<script src="vendor/jquery.gmap/jquery.gmap.js"></script>
+<script src="vendor/jquery.lazyload/jquery.lazyload.js"></script>
+<script src="vendor/isotope/jquery.isotope.js"></script>
+<script src="vendor/owlcarousel/owl.carousel.js"></script>
+<script src="vendor/jflickrfeed/jflickrfeed.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+<script src="vendor/vide/vide.js"></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src="javascripts/theme.js"></script>
+
+<!-- Specific Page Vendor and Views -->
+<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
+<script src="javascripts/views/view.home.js"></script>
+
+<!-- google map script -->
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<!-- Theme Custom -->
+<script src="javascripts/custom.js"></script>
+
+<!-- Theme Initialization Files -->
+<script src="javascripts/theme.init.js"></script>
+
+<% if data.site.defaults.googleanalytics %>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', '<%= data.site.defaults.googleanalytics %>']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+<% end %>

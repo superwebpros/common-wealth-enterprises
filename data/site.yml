@@ -10,11 +10,11 @@ defaults:
  twitterurl: false
  linkedinurl: false
  businessaddress: 934 Clark Street, Lansing, MI 48906
- businessphone: 517 862 3251
+ businessphone: 517-862-3251
  businessemail: tstewart@comwent.com
  showlatesttweets: false
  shownewslettersignup: true
- logourl: 
+ logourl: /images/logos/comwentlogo2.jpg
  companyname: Common Wealth Enterprises
  googleanalytics: false
  deployroot: http://www.acme.com

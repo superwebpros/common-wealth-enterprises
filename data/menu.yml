@@ -1,50 +1,5 @@
 About: 
  url: #about
- Landing Page: 
-    url: index.html
- Classic:
-    url: index-classic.html 
-    Classic - Original:
-       url: index-classic.html
-    Classic - Color:
-       url: index-classic-color.html
-    Classic - Light:
-       url: index-classic-light.html
-       extrahtml: <span class="tip tip-primary">Hero</span>
-    Classic - Video:
-       url: index-classic-video.html
-       extrahtml: <span class="tip tip-secondary">SuperHero</span>
-    Classic - Video - Light:
-       url: index-classic-video-light.html
-       extrahtml: <span class="tip tip-secondary">SuperHero</span>
- Corporate:
-    url: index-corporate.html 
-    extrahtml: <span class="tip">new</span>
-    Corporate - Version 1:
-        url: index-corporate.html
-    Corporate - Version 2:
-        url: index-corporate-2.html
-    Corporate - Version 3:
-        url: index-corporate-3.html
-        extrahtml: <span class="tip tip-primary">Hero</span>
-    Corporate - Version 4:
-        url: index-corporate-4.html
-        extrahtml: <span class="tip tip-primary">Hero</span>
-    Corporate - Version 5:
-        url: index-corporate-5.html
-        extrahtml: <span class="tip tip-primary">Hero</span>
-    Corporate - Version 6:
-        url: index-corporate-6.html
-    Corporate - Version 7:
-        url: index-corporate-7.html
-        extrahtml: <span class="tip tip-secondary">SuperHero</span>
-    Corporate - Version 8:
-        url: index-corporate-8.html
-        extrahtml: <span class="tip tip-secondary">SuperHero</span>
- One Page:
-    url: #
-    One Page Original:
-      url: index-one-page.html
 Interactions:
  url: #
  Interactions 1:

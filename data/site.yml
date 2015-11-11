@@ -14,7 +14,7 @@ defaults:
  businessemail: tstewart@comwent.com
  showlatesttweets: false
  shownewslettersignup: true
- logourl: /images/logos/comwentlogo2.jpg
+ logourl: /images/logos/comwentlogo.png
  companyname: Common Wealth Enterprises
  googleanalytics: false
  deployroot: http://www.acme.com

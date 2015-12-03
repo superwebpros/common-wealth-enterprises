@@ -18,5 +18,5 @@ defaults:
  companyname: Common Wealth Enterprises
  googleanalytics: false
  deployroot: http://www.acme.com
- cognitelabsemailtoken: false # email tokens from http://samdobson.github.io/fwdform/ use curl to get a token like this: curl --data "email=t@blah.com" http://emailrouter.cognitelabs.com/register mandrill account is dave@cognitelabs.com and heroku is smithd98@gmail.com
+ cognitelabsemailtoken: c7d0c059-42bc-46ee-a1d9-15fd962aa3f2 # email tokens from http://samdobson.github.io/fwdform/ use curl to get a token like this: curl --data "email=t@blah.com" http://emailrouter.cognitelabs.com/register mandrill account is dave@cognitelabs.com and heroku is smithd98@gmail.com
 

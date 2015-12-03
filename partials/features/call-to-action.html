@@ -140,21 +140,32 @@
 					<h4>Newsletter</h4>
 					<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
 
-					<div class="alert alert-success hidden" id="newsletterSuccess">
-						<strong>Success!</strong> You've been added to our email list.
+					<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+						<style type="text/css">
+							#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+							/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+							   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+						</style>
+						<div id="mc_embed_signup">
+						<form action="//comwent.us12.list-manage.com/subscribe/post?u=bd1860ad4325675954cfb2597&amp;id=53251a43ed" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+						</label>
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bd1860ad4325675954cfb2597_53251a43ed" tabindex="-1" value=""></div>
+						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background:#9f0603;"></div>
+						    </div>
+						</form>
 					</div>
 
-					<div class="alert alert-danger hidden" id="newsletterError"></div>
-
-					<form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
-						<div class="input-group">
-							<input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="submit">Go!</button>
-							</span>
-						</div>
-					</form>
-				</div>
+					<!--End mc_embed_signup-->
 			</div>
 			
 			<div class="col-md-4">
@@ -238,6 +249,15 @@
 <!-- Theme Initialization Files -->
 <script src="javascripts/theme.init.js"></script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-70837717-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>

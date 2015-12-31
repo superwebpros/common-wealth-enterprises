@@ -2364,8 +2364,8 @@ section.section-custom-map-2 section.section {
 }
 /* #Footer */
 #footer {
-	background: #0e0e0e;
-	border-top: 4px solid #0e0e0e;
+	background: #000000;
+	border-top: 4px solid #000000;
 	font-size: 0.9em;
 	margin-top: 50px;
 	padding: 70px 0 0;
@@ -2553,8 +2553,8 @@ section.section-custom-map-2 section.section {
 }
 
 #footer .footer-copyright {
-	background: #060606;
-	border-top: 4px solid #060606;
+	background: #000000;
+	border-top: 4px solid #000000;
 	margin-top: 40px;
 	padding: 30px 0 10px;
 }

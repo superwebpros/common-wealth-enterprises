@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Sitemap: http://www.acme.com/sitemap.xml
+
+Disallow: /thanks/
